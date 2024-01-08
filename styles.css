@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(6, 4, 47, 1) 11%, rgba(30, 30, 122, 1) 33%, rgba(0, 212, 255, 1) 77%, rgba(0, 212, 255, 1) 82%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    margin-top: 90px;
+    background-color: rgb(8, 9, 28);
+    color: white;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10%;
+    border: solid 2px white;
+    box-shadow: 5px 20px 40px white;
+}
+
+.contenedor h1 {
+    margin: 50px 0 50px 0;
+}
+
+.contenedor label {
+    font-size: 1.3rem;
+    margin: 25px 0 5px 0;
+}
+
+.contenedor button {
+    color: white;
+    border: nonea;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(92, 92, 105);
+    border-radius: 44px;
+    background: rgb(8, 9, 28);
+    box-shadow: 18px 18px 30px rgb(2, 3, 7),
+        -8px -8px 30px rgb(21, 23, 71);
+}
+
+.contenedor button:hover {
+    border-radius: 44px;
+    background: rgb(8, 9, 28);
+    box-shadow: inset 18px 18px 40px rgb(2, 3, 7),
+        inset -18px -18px 40px rgb(21, 23, 71);
+}
+
+.contenedor li{
+    font-size: 1.5rem;
+}
+.contenedor span{
+    font-size: 1.6rem;
+    color: green;
+}
