@@ -13,10 +13,13 @@
         <h1>Simulador Interactivo</h1>
 
         <label for="precio">Ingrese el precio del producto:</label>
-        <input type="number" id="precio" />
+        <input type="number" id="precio" placeholder="Precio en pesos"/>
 
         <label for="cuotas">Ingrese la cantidad de cuotas:</label>
-        <input type="number" id="cuotas" />
+        <input type="number" id="cuotas" placeholder="3, 6 y hasta 12 cuotas"/>
+
+        <label for="descuento">¿Aplicar descuento del 20%? (Sí o No):</label>
+        <input type="text" id="descuento" placeholder="Escriba si o no"/>
 
         <button onclick="calcular()">Calcular</button>
 
@@ -27,8 +30,10 @@
                 <li>Costo por cuota: $ <span id="costo-por-cuota"></span></li>
             </ul>
         </article>
+        <h3>Gamboa Gabriel</h3>
     </div>
     <script src="/script.js"></script>
+
 </body>
 
 </html>

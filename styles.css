@@ -13,16 +13,16 @@ body {
 }
 
 .contenedor {
-    margin-top: 90px;
+    margin-top: 50px;
     background-color: rgb(8, 9, 28);
     color: white;
     width: 400px;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    border-radius: 10%;
+    border-radius: 40px;
     border: solid 2px white;
     box-shadow: 5px 20px 40px white;
 }
@@ -63,4 +63,7 @@ body {
 .contenedor span{
     font-size: 1.6rem;
     color: green;
+}
+h3{
+    padding-top: 50px;
 }
