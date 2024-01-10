@@ -22,12 +22,6 @@ function calcular() {
         alert("Por el momento solo podemos hacer el plan de Hasta 12 cuotas. Disculpe las molestias");
         return;
     }
-
-    if (![3, 6, 12].includes(cuotas)) {
-        alert("Solo aceptamos pagos en 3, 6 ó 12 cuotas. Por favor, seleccione una de estas opciones.");
-        return;
-    }
-
     
     //Variables
     let descuento = aplicarDescuento ? precio * 0.20 : 0;
@@ -41,9 +35,12 @@ function calcular() {
     while (unaCuota == cuotas) {
         let montoPorCuota = costoTotalConImpuestos / cuotas;
         alert(`Cuota ${unaCuota}: $${montoPorCuota.toFixed(2)}
-${"Se va a cobrar impuestos aunque sea una sola cuota, y no aplica el descuento del 20%. Gracias!!"}`);
+${"Se va a cobrar impuestos aunque sea una sola cuota. Gracias!!"}`);
         unaCuota++;
 
+    }if (![3, 6, 12].includes(cuotas)) {
+        alert("Solo aceptamos pagos en 3, 6 ó 12 cuotas. Por favor, seleccione una de estas opciones.");
+        return;
     }
     //Evento para mostrar el resultado en numeros con dos decimales
     document.getElementById("costo-total").innerText = costoTotalConImpuestos.toFixed(2);
