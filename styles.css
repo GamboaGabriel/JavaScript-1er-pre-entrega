@@ -38,7 +38,8 @@ body {
 
 .contenedor button {
     color: white;
-    border: nonea;
+    border: none;
+    cursor: pointer;
     margin: 20px 0 20px 0;
     border-radius: 20px;
     width: 150px;

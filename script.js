@@ -1,3 +1,14 @@
+//Corrección de la escritura de JS en el html //
+//Evento para conectar la funcion con el boton//
+    document.addEventListener("DOMContentLoaded", function () {
+    const calcularBtn = document.getElementById("calcularBtn");
+
+    calcularBtn.addEventListener("click", function () {
+        calcular();
+    });
+});
+
+
 function calcular() {
     let precio = parseFloat(document.getElementById("precio").value);
     let cuotas = parseInt(document.getElementById("cuotas").value);
