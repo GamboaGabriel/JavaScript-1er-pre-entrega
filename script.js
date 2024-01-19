@@ -35,7 +35,7 @@ function calcular() {
     while (unaCuota == cuotas) {
         let montoPorCuota = costoTotalConImpuestos / cuotas;
         alert(`Cuota ${unaCuota}: $${montoPorCuota.toFixed(2)}
-${"Se va a cobrar impuestos aunque sea una sola cuota. Gracias!!"}`);
+${"Se va a cobrar impuestos aunque sea una sola cuota. Gracias!!"}`)
         unaCuota++;
 
     }if (![3, 6, 12].includes(cuotas)) {
