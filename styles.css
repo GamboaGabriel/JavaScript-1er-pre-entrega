@@ -69,3 +69,7 @@ body {
 h3{
     padding-top: 50px;
 }
+article ul li{
+    list-style: none;
+    text-align: left;
+}

@@ -1,8 +1,8 @@
-//Corrección de la escritura de JS en el html //
-//Evento para conectar la funcion con el boton//
+//Evento para conectar la funcion con el boton
     document.addEventListener("DOMContentLoaded", function () {
     const calcularBtn = document.getElementById("calcularBtn");
 
+//Evento que conecta al boton html para ejecutar la funcion
     calcularBtn.addEventListener("click", function () {
         calcular();
     });
